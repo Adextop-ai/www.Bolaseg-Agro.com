@@ -323,7 +323,6 @@ footer { background:var(--dark); color:#9ca3af; text-align:center; padding:30px;
   border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer; display: none;
 }
 /* ===== PREMIUM HERO ===== */
-
 .hero{
     position:relative;
     min-height:100vh;
@@ -334,21 +333,18 @@ footer { background:var(--dark); color:#9ca3af; text-align:center; padding:30px;
     overflow:hidden;
     padding:120px 20px 80px;
 }
-
 .hero-overlay{
     position:absolute;
     inset:0;
     background:rgba(0,0,0,.55);
     z-index:1;
 }
-
 .hero-content{
     position:relative;
     z-index:2;
     max-width:850px;
     color:#fff;
 }
-
 .hero-badge{
     display:inline-block;
     background:#2e7d32;
@@ -358,21 +354,18 @@ footer { background:var(--dark); color:#9ca3af; text-align:center; padding:30px;
     font-size:15px;
     margin-bottom:25px;
 }
-
 .hero h1{
     font-size:60px;
     line-height:1.2;
     margin-bottom:20px;
     font-weight:700;
 }
-
 .hero-subtitle{
     font-size:20px;
     line-height:1.8;
     max-width:700px;
     margin:auto;
 }
-
 .hero-features{
     display:flex;
     justify-content:center;
@@ -380,21 +373,18 @@ footer { background:var(--dark); color:#9ca3af; text-align:center; padding:30px;
     gap:15px;
     margin:35px 0;
 }
-
 .hero-features span{
     background:rgba(255,255,255,.12);
     backdrop-filter:blur(8px);
     padding:12px 20px;
     border-radius:30px;
 }
-
 .hero-btns{
     display:flex;
     justify-content:center;
     gap:20px;
     flex-wrap:wrap;
 }
-
 .scroll-down{
     position:absolute;
     bottom:25px;
@@ -403,38 +393,30 @@ footer { background:var(--dark); color:#9ca3af; text-align:center; padding:30px;
     color:#fff;
     animation:float 2s infinite;
 }
-
 @keyframes float{
     0%,100%{transform:translate(-50%,0);}
     50%{transform:translate(-50%,10px);}
 }
 
 @media(max-width:768px){
-
 .hero{
 padding-top:110px;
 }
-
 .hero h1{
 font-size:38px;
 }
-
 .hero-subtitle{
 font-size:17px;
 }
-
 .hero-features{
 flex-direction:column;
 align-items:center;
 }
-
 .hero-btns{
 flex-direction:column;
 }
-
 .hero-btns a{
 width:100%;
 max-width:300px;
 }
-
 }
