@@ -188,18 +188,18 @@ body.dark .feature { color:var(--light-green); }
 .hero-content{
     position:relative;
     z-index:2;
-    max-width:800px;
     width:90%;
+    max-width:750px;
     margin:auto;
-    padding:20px;
+    text-align:center;
 }
 .hero h1{
-    font-size:clamp(2.5rem,6vw,4.5rem);
-    font-weight:800;
+    font-size:clamp(2.8rem,6vw,4.8rem);
     line-height:1.1;
-    margin-bottom:20px;
-    color:#fff;
-    text-shadow:0 5px 20px rgba(0,0,0,.45);
+    font-weight:800;
+    color:#ffffff;
+    margin-bottom:18px;
+    text-shadow:0 4px 20px rgba(0,0,0,.45);
 }
 .typewriter {
   font-size:24px; min-height:35px; margin-bottom:15px; color:var(--gold);
@@ -210,10 +210,10 @@ body.dark .feature { color:var(--light-green); }
   }
 @keyframes blink { 50% { opacity:0; } }
 .hero p{
-    font-size:clamp(1rem,2vw,1.3rem);
+    font-size:clamp(1rem,2vw,1.25rem);
     line-height:1.8;
+    color:#ffffff;
     margin-bottom:18px;
-    color:#f3f3f3;
 }
 .hero-btns { margin-top:35px; display:flex; gap:18px; justify-content:center; flex-wrap:wrap; }
 .btn {
