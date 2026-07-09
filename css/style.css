@@ -311,8 +311,39 @@ footer { background:var(--dark); color:#9ca3af; text-align:center; padding:30px;
   body.dark nav ul { background:#141414; }
   nav ul.active { display:flex; }
   .menu-toggle { display:block; }
-  .hero h1 { font-size:42px; }
-  .hero p { font-size:18px; }
+  .hero{
+    min-height:100vh;
+    padding:100px 20px 60px;
+}
+
+.hero-content{
+    width:100%;
+    max-width:100%;
+    padding:0 10px;
+}
+
+.hero h1{
+    font-size:38px;
+    line-height:1.2;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:17px;
+    line-height:1.7;
+}
+
+.hero-btns{
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.hero-btns .btn{
+    width:100%;
+    max-width:280px;
+    text-align:center;
+}
   .about-grid,.contact-grid { grid-template-columns:1fr; gap:40px; }
   .stats { flex-direction:column; gap:20px; }
   section { padding:70px 20px; }
