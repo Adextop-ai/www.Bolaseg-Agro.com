@@ -1,4 +1,4 @@
-I'm * { margin:0; padding:0; box-sizing:border-box; }
+* { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
@@ -175,18 +175,15 @@ body.dark .feature { color:var(--light-green); }
 }
 .hero-bg{
     position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+    inset:0;
 
-    background:url("../Image/HERO.BG.png");
+    background-image:url("../Image/HERO.BG.png");
     background-size:cover;
-    background-position:center;
+    background-position:center center;
     background-repeat:no-repeat;
 
-    filter:brightness(0.30);
-    animation:zoom 20s infinite alternate;
+    filter:brightness(.35);
+    animation:zoom 20s ease-in-out infinite alternate;
 }
 .hero-content{
     position:relative;
