@@ -99,17 +99,21 @@ document.getElementById('contactForm').addEventListener('submit', (e) => {
 });
 // HERO SLIDER
 let slides = document.querySelectorAll(".slide");
-let index = 0;
 
-function showSlide() {
-  slides.forEach(slide => slide.classList.remove("active"));
-  slides[index].classList.add("active");
+if (slides.length > 0) {
+  let index = 0;
 
-  index++;
-  if (index >= slides.length) index = 0;
+  function showSlide() {
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[index].classList.add("active");
+
+    index++;
+    if (index >= slides.length) index = 0;
+  }
+
+  showSlide();
+  setInterval(showSlide, 4000);
 }
-
-setInterval(showSlide, 4000);
 
 const counters = document.querySelectorAll(".counter");
 
