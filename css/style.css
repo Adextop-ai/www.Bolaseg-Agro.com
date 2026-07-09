@@ -220,9 +220,21 @@ body.dark .feature { color:var(--light-green); }
   padding:16px 38px; border-radius:50px; text-decoration:none; font-weight:700;
   transition:0.3s; display:inline-block; font-size:16px; letter-spacing:0.5px;
 }
-.btn-primary { background:var(--gold); color:var(--green); box-shadow:0 8px 25px rgba(212,175,55,0.3); }
-.btn-outline { border:2px solid white; color:white; backdrop-filter:blur(5px); }
-.btn:hover { transform:translateY(-4px); box-shadow:0 12px 35px rgba(0,0,0,0.4); }
+.btn-primary{
+    background:linear-gradient(135deg,#d4af37,#f4d03f);
+    color:var(--green);
+    box-shadow:0 10px 30px rgba(212,175,55,.35);
+}
+.btn-outline{
+    border:2px solid rgba(255,255,255,.8);
+    color:#fff;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(8px);
+}
+.btn:hover{
+    transform:translateY(-5px) scale(1.03);
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
 .scroll-down {
   position:absolute; bottom:30px; left:50%; transform:translateX(-50%);
   animation:bounce 2s infinite; font-size:14px; color:var(--gold); font-weight:600;
