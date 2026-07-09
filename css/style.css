@@ -1,4 +1,4 @@
-* { margin:0; padding:0; box-sizing:border-box; }
+ * { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
@@ -45,314 +45,14 @@ body.dark .stat p { color:#9ca3af; }
 @keyframes spin { 100% { transform:rotate(360deg); } }
 
 /* NAVIGATION */
-
-
-43548.jpg
-43549.jpg
-43550.jpg
-43551.jpg
-43552.jpg
-43553.jpg
-43554.jpg
-43555.jpg
-43556.jpg
-43557.jpg
-43564.jpg
-43565.jpg
-43566.jpg
-43567.jpg
-43568.jpg
-This is all the lagi
-
-Excellent. 👏 You're doing a great job by making one change at a time.
-
-Now we're going to improve something that every visitor notices immediately: the navigation bar.
-
-Step 9 – Make the Navigation Look Premium
-Find this CSS:
 nav {
-  position:fixed;
-  top:0;
-  width:100%;
-  background:rgba(15,76,58,0.98);
-  backdrop-filter:blur(12px);
-  z-index:1000;
-  padding:18px 20px;
-  animation:slideDown 0.6s ease;
-  box-shadow:0 4px 20px rgba(0,0,0,0.1);
+  position:fixed; top:0; width:100%; background:rgba(15,76,58,0.98);
+  backdrop-filter:blur(12px); z-index:1000; padding:18px 20px;
+  animation:slideDown 0.6s ease; box-shadow:0 4px 20px rgba(0,0,0,0.1);
 }
-Replace it with:
-
-nav{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    padding:15px 0;
-    background:rgba(15,76,58,.95);
-    backdrop-filter:blur(15px);
-    box-shadow:0 8px 25px rgba(0,0,0,.15);
-    z-index:1000;
-    transition:all .3s ease;
-}
-Next, find:
-.nav-container {
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-Replace it with:
-
-.nav-container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-This aligns the navbar with the rest of the website.
-
-Now find:
-.logo {
-  color:white;
-  font-size:24px;
-  font-weight:800;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  letter-spacing:0.5px;
-}
-Replace it with:
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    color:#fff;
-    font-size:22px;
-    font-weight:800;
-    letter-spacing:.5px;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.logo:hover{
-    transform:scale(1.03);
-}
-Why these changes?
-They don't change your design dramatically. They simply:
-
-✅ Make the navigation look more premium.
-
-✅ Align it better with the page.
-
-✅ Improve spacing.
-
-✅ Keep it responsive.
-
-✅ Add a subtle hover effect to the logo.
-
-After you've done that
-Reply with "Done".
-
-Then we'll start what I think is the biggest upgrade on the entire website:
-🐔 The Services section.
-
-We'll turn it into professional-looking cards with better spacing, consistent heights, and smoother hover effects—without changing your content. I think that's one of the areas that will make visitors feel they're on a high-quality business website.
-
-
-Done 
-
-Excellent. 🎉 We're making good progress, and more importantly, we haven't broken your website. That's exactly how professional development should go.
-
-Now I want to fix something that I noticed when reading your code. This one will make a visible improvement.
-
-Step 10 – Improve the Service Cards
-Find this in style.css
-.services-grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
-  gap:35px;
-}
-Replace it with:
-
-.services-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-    align-items:stretch;
-}
-Why?
-This makes every service card the same height, even if one card has more text than another.
-
-Next, find:
-.services-card {
-(If yours still says .service-card, use that instead.)
-
-Replace the whole block with:
-
-.services-card{
-    background:#fff;
-    border-radius:20px;
-    padding:35px 30px;
-    transition:.35s;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-    display:flex;
-    flex-direction:column;
-    height:100%;
-}
-Then find the hover effect
-Replace it with:
-
-.services-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 20px 40px rgba(0,0,0,.15);
-}
-Finally, find:
-.services-icon
-Replace it with:
-
-.services-icon{
-    width:70px;
-    height:70px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:34px;
-    border-radius:50%;
-    background:rgba(46,125,50,.1);
-    margin-bottom:20px;
-}
-Why are we doing this?
-It will:
-
-✅ Make all service cards the same height.
-
-✅ Improve spacing.
-
-✅ Make the icons look more premium.
-
-✅ Keep everything responsive.
-
-One more thing
-I want to slow down slightly now.
-
-We're reaching the point where small changes can affect the whole site. After the Services section, I'd like us to spend one session cleaning the CSS (removing duplicates and unused rules). That won't change the appearance, but it will make the website much easier to maintain and reduce future bugs.
-
-After you finish this step, just reply:
-Done
-
-Then we'll move to the Gallery, which I think is the next section that can be made much more impressive without changing your content.
-
-
-In services-icon what about the animation that's here 
-
-Good catch! 👏 This is exactly the kind of question I want you to ask.
-
-Don't remove the animation. We want to improve the website, not lose the nice effects you've already built.
-
-Your current CSS is:
-
-.service-icon {
-    font-size:55px;
-    margin-bottom:25px;
-    display:inline-block;
-    animation:float 3s ease-in-out infinite;
-}
-Instead of replacing it completely, merge the two like this:
-
-.services-icon{
-    width:70px;
-    height:70px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:34px;
-    border-radius:50%;
-    background:rgba(46,125,50,.1);
-    margin-bottom:20px;
-
-    /* Keep your animation */
-    animation:float 3s ease-in-out infinite;
-}
-This way you get:
-
-✅ The floating animation.
-
-✅ Better spacing.
-
-✅ A modern circular background.
-
-✅ A more professional appearance.
-
-From now on, here's how we'll work
-I now understand your goal better.
-
-Whenever we edit your CSS, I will preserve existing features unless there's a good reason to remove them.
-
-That means if your code already has:
-
-Animations ✅
-
-Hover effects ✅
-
-Shadows ✅
-
-Transitions ✅
-
-I'll tell you whether to keep, modify, or remove them, instead of replacing everything.
-
-That will make the editing process much safer and keep the personality of your website intact.
-
-
-Something has happened 
-Put back my formal codes from Nav
-
-Absolutely. Since something changed unexpectedly, let's restore the original navigation before making any more improvements. That's the safest approach.
-
-Replace your current navigation CSS with your original code:
-
-/* NAVIGATION */
-nav {
-  position:fixed;
-  top:0;
-  width:100%;
-  background:rgba(15,76,58,0.98);
-  backdrop-filter:blur(12px);
-  z-index:1000;
-  padding:18px 20px;
-  animation:slideDown 0.6s ease;
-  box-shadow:0 4px 20px rgba(0,0,0,0.1);
-}
-
-.nav-container {
-  max-width:1200px;
-  margin:auto;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.logo {
-  color:white;
-  font-size:24px;
-  font-weight:800;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  letter-spacing:0.5px;
-}
-
-.logo-icon {
-  animation:float 3s ease-in-out infinite;
-}
-
-.logo:hover{
-    transform:scale(1.03);
-}
+.nav-container { max-width:1200px; margin:auto; display:flex; justify-content:space-between; align-items:center; }
+.logo { color:white; font-size:24px; font-weight:800; display:flex; align-items:center; gap:10px; letter-spacing:0.5px; }
+.logo-icon { animation:float 3s ease-in-out infinite; }
 nav ul { list-style:none; display:flex; gap:35px; }
 nav ul li a { color:white; text-decoration:none; font-weight:600; font-size:15px; position:relative; letter-spacing:0.3px; }
 nav ul li a::after {
@@ -443,7 +143,7 @@ body.dark .feature { color:var(--light-green); }
 /* HERO SECTION */
 .hero {
   height:100vh; display:flex; align-items:center; justify-content:center;
-  text-align:center; color:green; position:relative; overflow:hidden;
+  text-align:center; color:green; position:relative; overflow:hidde
 }
 .hero-bg {
   position:absolute; top:0; left:0; width:100%; height:100%;
@@ -451,22 +151,8 @@ body.dark .feature { color:var(--light-green); }
   filter:brightness(0.30);
   animation:zoom 20s infinite alternate;
 }
-.hero-content{
-    position:relative;
-    z-index:2;
-    max-width:800px;
-    width:90%;
-    margin:auto;
-    padding:20px;
-}
-.hero h1{
-    font-size:clamp(2.5rem,6vw,4.5rem);
-    font-weight:800;
-    line-height:1.1;
-    margin-bottom:20px;
-    color:#fff;
-    text-shadow:0 5px 20px rgba(0,0,0,.45);
-}
+.hero-content { position:relative; z-index:1; max-width:850px; padding:20px; }
+.hero h1 { font-size:68px; margin-bottom:20px; font-weight:800; letter-spacing:-1px; text-shadow:0 4px 20px rgba(0,0,0,0.3); }
 .typewriter {
   font-size:24px; min-height:35px; margin-bottom:15px; color:var(--gold);
   font-weight:600;
@@ -474,13 +160,8 @@ body.dark .feature { color:var(--light-green); }
 .typewriter::after {
   content:'|'; animation:blink 0.7s infinite;
   }
-@keyframes blink { 50% { opacity:0; } 
-  .hero p{
-    font-size:clamp(1rem,2vw,1.3rem);
-    line-height:1.8;
-    margin-bottom:18px;
-    color:#f3f3f3;
-}                
+@keyframes blink { 50% { opacity:0; } }
+.hero p { font-size:21px; margin-bottom:12px; opacity:0.95; font-weight:400; }
 .hero-btns { margin-top:35px; display:flex; gap:18px; justify-content:center; flex-wrap:wrap; }
 .btn {
   padding:16px 38px; border-radius:50px; text-decoration:none; font-weight:700;
@@ -549,350 +230,20 @@ section { padding:110px 20px; }
 .stat p { color:#6b7280; font-weight:500; }
 
 /* SERVICES SECTION */
-
-43548.jpg
-43549.jpg
-43550.jpg
-43551.jpg
-43552.jpg
-43553.jpg
-43554.jpg
-43555.jpg
-43556.jpg
-43557.jpg
-43564.jpg
-43565.jpg
-43566.jpg
-43567.jpg
-43568.jpg
-This is all the lagi
-
-Excellent. 👏 You're doing a great job by making one change at a time.
-
-Now we're going to improve something that every visitor notices immediately: the navigation bar.
-
-Step 9 – Make the Navigation Look Premium
-Find this CSS:
-nav {
-  position:fixed;
-  top:0;
-  width:100%;
-  background:rgba(15,76,58,0.98);
-  backdrop-filter:blur(12px);
-  z-index:1000;
-  padding:18px 20px;
-  animation:slideDown 0.6s ease;
-  box-shadow:0 4px 20px rgba(0,0,0,0.1);
-}
-Replace it with:
-
-nav{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    padding:15px 0;
-    background:rgba(15,76,58,.95);
-    backdrop-filter:blur(15px);
-    box-shadow:0 8px 25px rgba(0,0,0,.15);
-    z-index:1000;
-    transition:all .3s ease;
-}
-Next, find:
-.nav-container {
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-Replace it with:
-
-.nav-container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-This aligns the navbar with the rest of the website.
-
-Now find:
-.logo {
-  color:white;
-  font-size:24px;
-  font-weight:800;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  letter-spacing:0.5px;
-}
-Replace it with:
-
-.logo{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    color:#fff;
-    font-size:22px;
-    font-weight:800;
-    letter-spacing:.5px;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.logo:hover{
-    transform:scale(1.03);
-}
-Why these changes?
-They don't change your design dramatically. They simply:
-
-✅ Make the navigation look more premium.
-
-✅ Align it better with the page.
-
-✅ Improve spacing.
-
-✅ Keep it responsive.
-
-✅ Add a subtle hover effect to the logo.
-
-After you've done that
-Reply with "Done".
-
-Then we'll start what I think is the biggest upgrade on the entire website:
-🐔 The Services section.
-
-We'll turn it into professional-looking cards with better spacing, consistent heights, and smoother hover effects—without changing your content. I think that's one of the areas that will make visitors feel they're on a high-quality business website.
-
-
-Done 
-
-Good catch! 👏 This is exactly the kind of question I want you to ask.
-
-Don't remove the animation. We want to improve the website, not lose the nice effects you've already built.
-
-Your current CSS is:
-
-.service-icon {
-    font-size:55px;
-    margin-bottom:25px;
-    display:inline-block;
-    animation:float 3s ease-in-out infinite;
-}
-Instead of replacing it completely, merge the two like this:
-
-.services-icon{
-    width:70px;
-    height:70px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:34px;
-    border-radius:50%;
-    background:rgba(46,125,50,.1);
-    margin-bottom:20px;
-
-    /* Keep your animation */
-    animation:float 3s ease-in-out infinite;
-}
-This way you get:
-
-✅ The floating animation.
-
-✅ Better spacing.
-
-✅ A modern circular background.
-
-✅ A more professional appearance.
-
-From now on, here's how we'll work
-I now understand your goal better.
-
-Whenever we edit your CSS, I will preserve existing features unless there's a good reason to remove them.
-
-That means if your code already has:
-
-Animations ✅
-
-Hover effects ✅
-
-Shadows ✅
-
-Transitions ✅
-
-I'll tell you whether to keep, modify, or remove them, instead of replacing everything.
-
-That will make the editing process much safer and keep the personality of your website intact.
-
-
-Something has happened 
-Put back my formal codes from Nav
-
-Absolutely. Since something changed unexpectedly, let's restore the original navigation before making any more improvements. That's the safest approach.
-
-Replace your current navigation CSS with your original code:
-
-/* NAVIGATION */
-nav {
-  position:fixed;
-  top:0;
-  width:100%;
-  background:rgba(15,76,58,0.98);
-  backdrop-filter:blur(12px);
-  z-index:1000;
-  padding:18px 20px;
-  animation:slideDown 0.6s ease;
-  box-shadow:0 4px 20px rgba(0,0,0,0.1);
-}
-
-.nav-container {
-  max-width:1200px;
-  margin:auto;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.logo {
-  color:white;
-  font-size:24px;
-  font-weight:800;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  letter-spacing:0.5px;
-}
-
-.logo-icon {
-  animation:float 3s ease-in-out infinite;
-}
-
-nav ul {
-  list-style:none;
-  display:flex;
-  gap:35px;
-}
-
-nav ul li a {
-  color:white;
-  text-decoration:none;
-  font-weight:600;
-  font-size:15px;
-  position:relative;
-  letter-spacing:0.3px;
-}
-
-nav ul li a::after {
-  content:'';
-  position:absolute;
-  bottom:-6px;
-  left:0;
-  width:0;
-  height:2px;
-  background:var(--gold);
-  transition:0.3s;
-}
-
-nav ul li a:hover::after {
-  width:100%;
-}
-
-.nav-right {
-  display:flex;
-  gap:15px;
-  align-items:center;
-}
-
-.dark-toggle {
-  background:rgba(212,175,55,0.2);
-  border:2px solid var(--gold);
-  color:var(--gold);
-  width:42px;
-  height:42px;
-  border-radius:50%;
-  cursor:pointer;
-  font-size:18px;
-  transition:0.3s;
-  font-weight:700;
-}
-
-.dark-toggle:hover {
-  background:var(--gold);
-  color:var(--green);
-  transform:rotate(180deg) scale(1.1);
-}
-
-.menu-toggle {
-  display:none;
-  color:white;
-  font-size:26px;
-  cursor:pointer;
-}
-After restoring it
-Tell me:
-
-✅ Is the navigation back to normal?
-
-Or what exactly changed? (For example: the logo moved, the menu spacing changed, the menu disappeared, etc.)
-
-I also want to change our approach.
-I think we've reached the point where editing isolated snippets is becoming risky because your CSS has grown quite large.
-
-From now on, I won't ask you to replace blocks of code unless I'm sure they won't affect other parts of the site. We'll make small, targeted edits and test after each one. That will protect your website while we continue improving it.
-
-
-And the services it the codes i sent to you that what i said you should send back 
-
-You're right. I misunderstood what you wanted, and we shouldn't keep changes that make the site worse.
-
-Below are your original Services CSS codes exactly as you originally sent them.
-
-Services Section
-/* SERVICES SECTION */
 .services { background:#f5f7f5; transition:background 0.3s; }
-
-.services-grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
-  gap:35px;
+.services-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:35px; }
+.service-card {
+  background:white; padding:45px 35px; border-radius:24px; text-align:center;
+  transition:0.4s; cursor:pointer; border:1px solid #e5e7eb;
 }
-
-.services-card {
-  background:white;
-  padding:45px 35px;
-  border-radius:24px;
-  text-align:center;
-  transition:0.4s;
-  cursor:pointer;
-  border:1px solid #e5e7eb;
-}
-
-.services-card:hover {
+.service-card:hover {
   transform:translateY(-12px) scale(1.02);
   box-shadow:0 25px 50px rgba(15,76,58,0.15);
   border-color:var(--gold);
 }
-
-.services-icon {
-  font-size:55px;
-  margin-bottom:25px;
-  display:inline-block;
-  animation:float 3s ease-in-out infinite;
-}
-
-.services-card h3 {
-  color:var(--green);
-  margin-bottom:15px;
-  font-size:22px;
-  font-weight:700;
-}
-
-.services-card p {
-  line-height:1.7;
-  color:#4b5563;
-}
+.service-icon { font-size:55px; margin-bottom:25px; display:inline-block; animation:float 3s ease-in-out infinite; }
+.service-card h3 { color:var(--green); margin-bottom:15px; font-size:22px; font-weight:700; }
+.service-card p { line-height:1.7; color:#4b5563; }
 
 /* GALLERY SECTION */
 .gallery-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:25px; }
@@ -960,39 +311,8 @@ footer { background:var(--dark); color:#9ca3af; text-align:center; padding:30px;
   body.dark nav ul { background:#141414; }
   nav ul.active { display:flex; }
   .menu-toggle { display:block; }
-  .hero{
-    min-height:100vh;
-    padding:100px 20px 60px;
-}
-
-.hero-content{
-    width:100%;
-    max-width:100%;
-    padding:0 10px;
-}
-
-.hero h1{
-    font-size:38px;
-    line-height:1.2;
-    margin-bottom:15px;
-}
-
-.hero p{
-    font-size:17px;
-    line-height:1.7;
-}
-
-.hero-btns{
-    flex-direction:column;
-    align-items:center;
-    gap:15px;
-}
-
-.hero-btns .btn{
-    width:100%;
-    max-width:280px;
-    text-align:center;
-}
+  .hero h1 { font-size:42px; }
+  .hero p { font-size:18px; }
   .about-grid,.contact-grid { grid-template-columns:1fr; gap:40px; }
   .stats { flex-direction:column; gap:20px; }
   section { padding:70px 20px; }
@@ -1002,3 +322,15 @@ footer { background:var(--dark); color:#9ca3af; text-align:center; padding:30px;
 #backToTop { position: fixed; bottom: 20px; right: 20px; background: #2e7d32; color: white; 
   border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer; display: none;
 }
+
+
+
+    
+
+
+
+
+
+
+    
+  
