@@ -18,12 +18,6 @@ document.querySelectorAll('nav ul li a').forEach(link => {
     navUl.classList.remove('active');
   });
 });
-// CLOSE MENU WHEN CLICK LINK
-document.querySelectorAll('nav ul li a').forEach(link => {
-  link.addEventListener('click', () => {
-    navUl.classList.remove('active');
-  });
-});
 // DARK MODE TOGGLE - THIS IS THE FIX
 const darkToggle = document.getElementById('darkToggle');
 const body = document.body;
