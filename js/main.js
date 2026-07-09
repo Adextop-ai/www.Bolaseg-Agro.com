@@ -41,9 +41,9 @@ darkToggle.addEventListener('click', () => {
 });
 // Typewriter Effect
 const texts = [
-  "Premium Livestock & Fresh Farm Produce",
-  "Healthy Cattle • Organic Vegetables • Trusted Delivery",
-  "Farming with Integrity Since 2015"
+  "Trusted Supplier of Healthy Day-Old Chicks",
+  "Broilers • Layers • Cockerels • Noilers",
+  "Quality Farm Products You Can Trust"
 ];
 let textIndex = 0;
 let charIndex = 0;
