@@ -1,4 +1,4 @@
- * { margin:0; padding:0; box-sizing:border-box; }
+I'm * { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
@@ -280,6 +280,7 @@ section { padding:110px 20px; }
     border-radius:50%;
     background:rgba(46,125,50,.1);
     margin-bottom:20px;
+    animation:float 3s ease-in-out infinite;
 }
 .services-card h3 { color:var(--green); margin-bottom:15px; font-size:22px; font-weight:700; }
 .services-card p { line-height:1.7; color:#4b5563; }
