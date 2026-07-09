@@ -258,6 +258,39 @@ align-items:center; gap:50px; padding-top:120px;
 }
 
 .btn-primary:hover{ background:#1b5e20; transform:translateY(-5px); }
+/* HERO TRUST BAR */
+
+.hero-trust{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.trust-item{
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(8px);
+    border:1px solid rgba(255,255,255,.2);
+    padding:12px 18px;
+    border-radius:50px;
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.trust-item:hover{
+    transform:translateY(-4px);
+    background:rgba(255,255,255,.18);
+}
 
 
 /* NAVIGATION */  
