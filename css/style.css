@@ -166,6 +166,14 @@ body.dark .feature { color:var(--light-green); }
   .welcome-box { padding:40px 25px; }
   .welcome-box h2 { font-size:32px; }
   .welcome-features { flex-direction:column; gap:15px; }
+  .hero-trust{
+    gap:10px;
+}
+
+.trust-item{
+    width:100%;
+    justify-content:center;
+}
 }
 
 /* HERO SECTION */
